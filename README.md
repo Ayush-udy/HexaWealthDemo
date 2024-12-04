@@ -25,15 +25,15 @@ Before running this project, ensure the following software is installed on your 
 
 ### Step 1: Clone the Repository
 
--git clone https://github.com/Ayush-udy/HexaWealthDemo
--cd Your folder name
+- [git clone] <https://github.com/Ayush-udy/HexaWealthDemo>
+- [cd] Your folder name
 
 ---
 
 ### Step 2: Setting Up the Server
 
 Navigate to the server directory
--cd server
+- [cd] server
 Install server dependencies
 -npm install or yarn install
 
