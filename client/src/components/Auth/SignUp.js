@@ -56,9 +56,9 @@ const SignUp = () => {
   };
 
   return (
-    <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+    <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-        <h2 className="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">
+        <h2 className="mt-2 text-center text-2xl/9 font-bold tracking-tight text-gray-900">
           Sign up for a new account
         </h2>
       </div>
@@ -66,7 +66,9 @@ const SignUp = () => {
       <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
         <form onSubmit={handleSubmit} className="space-y-6">
           {error && <p className="text-red-500 text-center">{error}</p>}
-          {success && <p className="text-green-500 text-center">{success}</p>}
+          {success && (
+            <p className="text-green-500 text-center text-lg">{success}</p>
+          )}
 
           <div>
             <label
