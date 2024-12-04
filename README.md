@@ -34,32 +34,31 @@ Before running this project, ensure the following software is installed on your 
 
 Navigate to the server directory
 - cd server
-- Install server dependencies
+  Install server dependencies
 - npm install or yarn install
 
-- Create a .env fil in the server directory and add the following:
+  Create a .env fil in the server directory and add the following:
 
 -  PORT=5000
 -  MONGO_URI=mongodb://localhost:27017/your-database-name
 -  JWT_SECRET=your-secret-key
 
 Start the server
--npm start
+- npm start
 ---
 ### Setting Up the Client
 
 Navigate to Client directory
--cd ../client
+- cd ../client
 Install client dependencies
--npm install or yarn install
--Create a .env file in the client directory and add the follwing:
--REACT_APP_API_URL=http://localhost:5000
+- npm install or yarn install
+ Create a .env file in the client directory and add the follwing:
+- REACT_APP_API_URL=http://localhost:5000
 
 Start the client
--npm start
+- npm start
 ---
-###Directory Structure
-
+### Directory Structure
 
 HexaWealth/
 │
