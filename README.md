@@ -25,8 +25,8 @@ Before running this project, ensure the following software is installed on your 
 
 ### Step 1: Clone the Repository
 
-git clone <repository-url>
-cd <project-folder>
+git clone https://github.com/Ayush-udy/HexaWealthDemo
+cd Your folder name
 
 ---
 
