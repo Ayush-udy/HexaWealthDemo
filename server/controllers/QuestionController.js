@@ -25,7 +25,7 @@ exports.getApprovedQuestions = async (req, res) => {
   try {
     const questions = await Questions.find({ isApproved: true }).populate(
       "userId",
-      "name email" // Include user details if needed
+      "name"
     );
     res.status(200).json(questions);
   } catch (error) {
@@ -38,7 +38,10 @@ exports.getApprovedQuestions = async (req, res) => {
 // Fetch pending questions (admin only)
 exports.getPendingQuestions = async (req, res) => {
   try {
-    const questions = await Questions.find({ isApproved: false });
+    const questions = await Questions.find({ isApproved: false }).populate({
+      path: "userId",
+    });
+    console.log("It is pending section");
     res.status(200).json(questions);
   } catch (error) {
     res

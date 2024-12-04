@@ -101,13 +101,16 @@ const AdminDashboard = () => {
                   className="p-4 bg-gray-100 rounded shadow flex justify-between items-center"
                 >
                   <div>
-                    <p className="text-sm text-gray-700">{post.Question}</p>
-                    <span className="text-xs text-gray-500">
-                      Tag: {post.tag}
+                    <p className="text-base text-gray-700">{post.Question}</p>
+                    <span className="text-sm text-gray-700">
+                      Tag:{" "}
+                      <span className="text-gray-50 rounded-md bg-gray-500 px-1 text-xs font-medium">
+                        {post.tag}
+                      </span>
                     </span>
                   </div>
                   <button
-                    className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-700"
+                    className="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-700"
                     onClick={() => handleDeletePost(post._id)}
                   >
                     Delete Post
@@ -131,17 +134,20 @@ const AdminDashboard = () => {
                   className="p-4 bg-gray-100 rounded shadow flex justify-between items-center"
                 >
                   <div>
-                    <p className="text-sm text-gray-700">{question.Question}</p>
-                    <span className="text-xs text-gray-500">
-                      Author: {question.userId?.username || "Unknown"}
+                    <p className="text-lg text-gray-700">{question.Question}</p>
+                    <span className="text-sm text-gray-500">
+                      Author: {question.userId?.username || "Unknown"} {"  "}
                     </span>
-                    <span className="text-xs text-gray-500">
-                      Role: {question.userId?.role || "Not specified"}
+                    <span className="text-sm text-gray-900 ">
+                      Tag:{" "}
+                      <span className="text-gray-50 rounded-md bg-gray-500 px-2 text-xs font-medium">
+                        {question.tag || "Unknown"}
+                      </span>
                     </span>
                   </div>
                   <div className="flex space-x-2">
                     <button
-                      className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700"
+                      className="bg-green-500 text-white px-3 py-1 rounded hover:bg-green-700 text-base"
                       onClick={() =>
                         handleQuestionAction(question._id, "approve")
                       }
@@ -149,7 +155,7 @@ const AdminDashboard = () => {
                       Approve
                     </button>
                     <button
-                      className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-700"
+                      className="bg-red-500 text-white px-4 py-1 rounded hover:bg-red-700 text-base"
                       onClick={() =>
                         handleQuestionAction(question._id, "reject")
                       }
