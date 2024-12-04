@@ -58,7 +58,7 @@ REACT_APP_API_URL=http://localhost:5000
 Start the client
 npm start
 
-Directory Structure
+###Directory Structure
 HexaWealth/
 │
 ├── client/ # Front-end application
