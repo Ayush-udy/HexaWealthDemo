@@ -33,19 +33,22 @@ Before running this project, ensure the following software is installed on your 
 ### Step 2: Setting Up the Server
 
 Navigate to the server directory
-- cd server
-  Install server dependencies
-- npm install or yarn install
+  - cd server
+  
+Install server dependencies
+  
+  - npm install or yarn install
 
-  Create a .env fil in the server directory and add the following:
+Create a .env fil in the server directory and add the following:
 
 -  PORT=5000
 -  MONGO_URI=mongodb://localhost:27017/your-database-name
 -  JWT_SECRET=your-secret-key
 
 Start the server
-- npm start
+  - npm start
 ---
+
 ### Setting Up the Client
 
 Navigate to Client directory
