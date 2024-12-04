@@ -45,7 +45,7 @@ JWT_SECRET=your-secret-key
 
 Start the server
 npm start
-
+---
 ### Setting Up the Client
 
 Navigate to Client directory
@@ -57,7 +57,7 @@ REACT_APP_API_URL=http://localhost:5000
 
 Start the client
 npm start
-
+---
 ###Directory Structure
 HexaWealth/
 │
