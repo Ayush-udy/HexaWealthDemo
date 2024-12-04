@@ -71,4 +71,36 @@ Start the client
 ---
 ### Directory Structure
 
-HexaWealth/ │ ├── client/ # Front-end application │ ├── public/ │ ├── src/ │ ├── package.json │ └── .env # Client-specific environment variables │ ├── server/ # Back-end application │ ├── models/ │ ├── routes/ │ ├── controllers/ │ ├── package.json │ ├── .env # Server-specific environment variables │ └── server.js # Server entry point │ └── README.md # Project documentation
+HexaWealth/
+
+│
+
+├── client/ # Front-end application
+
+│ ├── public/
+
+│ ├── src/
+
+│ ├── package.json
+
+│ └── .env # Client-specific environment variables
+
+│
+
+├── server/ # Back-end application
+
+│ ├── models/
+
+│ ├── routes/
+
+│ ├── controllers/
+
+│ ├── package.json
+
+│ ├── .env # Server-specific environment variables
+
+│ └── server.js # Server entry point
+
+│
+
+└── README.md # Project documentation
